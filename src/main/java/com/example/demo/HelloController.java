@@ -10,4 +10,14 @@ public class HelloController {
 	public String hello() {
 		return "hello world!";
 	}
+	
+	@RequestMapping("/getDemo")
+	public Demo getDemo() {
+		
+		Demo demo = new Demo() ;
+		demo.setId(1);
+		demo.setName("jack");
+
+		return demo;
+	}
 }
